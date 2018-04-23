@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Model", "CarpoolApp.Model\CarpoolApp.Model.csproj", "{34AC69F7-600F-4A58-A00B-D5EC88143C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Repositories", "CarpoolApp.Repositories\CarpoolApp.Repositories.csproj", "{B4D6C91F-A98C-4B5C-A0DC-19B4C06B9129}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarpoolApp.Tests", "CarpoolApp.Tests", "{3FAC43DC-5632-40E9-85C7-F15DC5998443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Core", "CarpoolApp.Core\CarpoolApp.Core.csproj", "{D486C6DB-CAA0-4A46-AECD-38BC77F478EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Service", "CarpoolApp.Service\CarpoolApp.Service.csproj", "{6E929BB5-84E2-494F-844F-8D6D0E02231B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.DTO", "CarpoolApp.DTO\CarpoolApp.DTO.csproj", "{D33823E5-79B3-47D0-B021-8434904A0BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Services.Test", "CarpoolApp.Services.Test\CarpoolApp.Services.Test.csproj", "{6D799CFC-5181-46CC-A941-299E5CC3156E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarpoolApp.Web", "CarpoolApp.Web\CarpoolApp.Web.csproj", "{EF4A7136-73FF-4137-9B53-5B3B7613FD84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34AC69F7-600F-4A58-A00B-D5EC88143C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34AC69F7-600F-4A58-A00B-D5EC88143C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34AC69F7-600F-4A58-A00B-D5EC88143C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34AC69F7-600F-4A58-A00B-D5EC88143C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D6C91F-A98C-4B5C-A0DC-19B4C06B9129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D6C91F-A98C-4B5C-A0DC-19B4C06B9129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D6C91F-A98C-4B5C-A0DC-19B4C06B9129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D6C91F-A98C-4B5C-A0DC-19B4C06B9129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D486C6DB-CAA0-4A46-AECD-38BC77F478EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D486C6DB-CAA0-4A46-AECD-38BC77F478EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D486C6DB-CAA0-4A46-AECD-38BC77F478EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D486C6DB-CAA0-4A46-AECD-38BC77F478EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E929BB5-84E2-494F-844F-8D6D0E02231B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E929BB5-84E2-494F-844F-8D6D0E02231B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E929BB5-84E2-494F-844F-8D6D0E02231B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E929BB5-84E2-494F-844F-8D6D0E02231B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33823E5-79B3-47D0-B021-8434904A0BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33823E5-79B3-47D0-B021-8434904A0BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33823E5-79B3-47D0-B021-8434904A0BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33823E5-79B3-47D0-B021-8434904A0BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D799CFC-5181-46CC-A941-299E5CC3156E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D799CFC-5181-46CC-A941-299E5CC3156E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D799CFC-5181-46CC-A941-299E5CC3156E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D799CFC-5181-46CC-A941-299E5CC3156E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4A7136-73FF-4137-9B53-5B3B7613FD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4A7136-73FF-4137-9B53-5B3B7613FD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4A7136-73FF-4137-9B53-5B3B7613FD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4A7136-73FF-4137-9B53-5B3B7613FD84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D799CFC-5181-46CC-A941-299E5CC3156E} = {3FAC43DC-5632-40E9-85C7-F15DC5998443}
+	EndGlobalSection
+EndGlobal

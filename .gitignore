@@ -1,0 +1,17 @@
+/packages
+/CarpoolApp.Core/bin
+/CarpoolApp.Core/obj
+/CarpoolApp.DTO/bin
+/CarpoolApp.DTO/obj
+/CarpoolApp.Model/bin
+/CarpoolApp.Model/obj
+/CarpoolApp.Repositories/bin
+/CarpoolApp.Repositories/obj
+/CarpoolApp.Service/bin
+/CarpoolApp.Service/obj
+/CarpoolApp.Services.Tests/bin
+/CarpoolApp.Services.Tests/obj
+/CarpoolApp.Web/bin
+/CarpoolApp.Web/obj
+/CarpoolApp.Web/bower_components
+/CarpoolApp.Web/node_modules

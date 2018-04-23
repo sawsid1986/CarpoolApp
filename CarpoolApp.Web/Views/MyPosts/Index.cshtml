@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "My Posts";
+}
+
+<div ng-controller="postsController">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h2>My Active Posts</h2>                    
+                </div>
+                <div class="col-lg-2" style="vertical-align:central">
+                    <div style="padding:19px">
+                        <button type="button" class="btn btn-default btn-lg form-control" ng-click="addEditPosts()">Add Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="MyPosts" class="panel panel-default">
+        <div class="panel-body">
+            <div>Showing {{MyPosts.length}} Posts</div>
+            <hr />
+            <div ng-repeat="post in MyPosts" class="panel panel-default">
+                <post-list-item post="post" ></post-list-item>                                
+            </div>
+         </div>
+    </div>
+ </div>

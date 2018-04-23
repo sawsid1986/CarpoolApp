@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "My Cars";
+}
+
+<div ng-controller="carsController">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-11">
+                    <h2>My Cars</h2>                    
+                </div>
+                <div class="col-lg-1" style="vertical-align:central">
+                    <div style="padding:19px">
+                        <button type="button" class="btn btn-default btn-md form-control" ng-click="addEditCar()">Add Car</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+    <div ng-if="VehicleList" class="panel panel-default">
+        <div class="panel-body">
+            <div>Showing {{VehicleList.length}} Cars</div>
+            <hr /> 
+            <div ng-repeat="vehicle in VehicleList" class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <h4>{{vehicle.Name}}</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="btn-group">                                
+                                <button type="button" class="btn btn-default btn-md"  ng-click="addEditCar(vehicle)">Edit</button>
+                                <button type="button" class="btn btn-default btn-md" ng-click="delete(vehicle)">Delete</button>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <strong>{{vehicle.RegistrationNumber}}</strong>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿<div class="modal-header">
+    Add Car
+</div>
+<div class="modal-body">
+    <form name="form" class="form-horizontal" novalidate>
+        <div class="row">            
+            <div class="form-group" ng-class="{'has-error': form.Name.$error.ModelError}">                
+                <label class="control-label col-sm-3" >Enter car name</label>                
+                <div class="col-sm-9">
+                    <input name="Name" class="form-control" type="text" ng-model="VehicleDTO.Name" app-model-validator />                    
+                    <div ng-show="form.Name.$error.ModelError">
+                        <span ng-repeat="error in Name" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group" ng-class="{'has-error': form.RegistrationNumber.$error.ModelError}">
+                <label class="control-label col-sm-3">Enter Registration Number</label>
+                <div class="col-sm-9">
+                    <input name="RegistrationNumber" class="form-control" type="text" ng-model="VehicleDTO.RegistrationNumber" app-model-validator />
+                    <div ng-show="form.RegistrationNumber.$error.ModelError">
+                        <span ng-repeat="error in RegistrationNumber" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <div class="right">
+        <button type="submit" class="btn btn-primary" ng-click="add()">
+            Add
+        </button>
+        <button type="button" class="btn btn-default" ng-click="cancel()">
+            Cancel
+        </button>
+    </div>
+</div>

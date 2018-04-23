@@ -1,0 +1,73 @@
+﻿<div class="modal-header">
+    Add Post
+</div>
+<div class="modal-body">
+    <form name="form" class="form-horizontal" novalidate>
+        <div class="row">
+            <div class="form-group col-sm-12" ng-class="{'has-error': form.CarId.$error.ModelError}">
+                <label class="control-label col-sm-2">Select Car</label>
+                <div class="col-sm-10">
+                    <select name="CarId" ng-model="postDTO.CarId" class="form-control" ng-options="vehicle.Id as vehicle.Name for vehicle in vehicleList" app-model-validator/>                                                      
+                    <div ng-show="form.CarId.$error.ModelError">
+                        <span ng-repeat="error in CarId" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6" ng-class="{'has-error': form.FromLocationId.$error.ModelError}">
+                <label class="control-label col-sm-4">Select Source</label>
+                <div class="col-sm-8">
+                    <input type="text" name='FromLocationId' ng-model="postDTO.fromLocation" uib-typeahead="address.Name for address in getLocations($viewValue)" 
+                           typeahead-on-select="setLocation($item,'FromLocationId')" class="form-control" app-model-validator app-model-validator-field="FromLocationId">                    
+                    <div ng-show="form.FromLocationId.$error.ModelError">
+                        <span ng-repeat="error in FromLocationId" style="color:#a94442">{{error}}</span>
+                    </div>                                        
+                </div>
+                
+            </div>            
+            <div class="form-group col-sm-6" ng-class="{'has-error': form.ToLocationId.$error.ModelError}">
+                <label class="control-label col-sm-4">Select Destination</label>
+                <div class="col-sm-8">
+                    <input type="text" name="ToLocationId" ng-model="postDTO.toLocation" uib-typeahead="address.Name for address in getLocations($viewValue)"
+                           typeahead-on-select="setLocation($item,'ToLocationId')" class="form-control" app-model-validator app-model-validator-field="ToLocationId">                    
+                    <div ng-show="form.ToLocationId.$error.ModelError">
+                        <span ng-repeat="error in ToLocationId" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6" ng-class="{'has-error': form.DepartureTime.$error.ModelError}">
+                <label class="control-label col-sm-4">Select Departure Time</label>
+                <div class="col-sm-8">
+                    <input type="text" name="DepartureTime" class="form-control" carpool-date-time-picker ng-model="postDTO.DepartureTime" app-model-validator/>                    
+                    <div ng-show="form.DepartureTime.$error.ModelError">
+                        <span ng-repeat="error in DepartureTime" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-sm-6" ng-class="{'has-error': form.NumberOfSeats.$error.ModelError}">
+                <label class="control-label col-sm-4">Select Number of Seats</label>
+                <div class="col-sm-8">
+                    <input name="NumberOfSeats" class="form-control" type="number" ng-model="postDTO.NumberOfSeats" app-model-validator />
+                    <div ng-show="form.NumberOfSeats.$error.ModelError">
+                        <span ng-repeat="error in NumberOfSeats" style="color:#a94442">{{error}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <div class="right">
+        <button type="submit" class="btn btn-primary" ng-click="add()">
+            Add
+        </button>
+        <button type="button" class="btn btn-default" ng-click="cancel()">
+            Cancel
+        </button>
+    </div>
+</div>
